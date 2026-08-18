@@ -15,6 +15,7 @@ Uso:
 
 import asyncio
 import csv
+import gzip
 import logging
 import sys
 from datetime import date, datetime
@@ -28,6 +29,7 @@ from playwright.async_api import async_playwright
 
 PROJECT_DIR = Path(__file__).resolve().parent.parent
 DATA_DIR = PROJECT_DIR / "data_historica"
+RESPALDO_DIR = PROJECT_DIR / "respaldo_html"
 LOG_DIR = PROJECT_DIR / "logs"
 
 BASE_URL = "https://www.facilito.gob.pe/facilito/actions/PreciosCombustibleAutomotorAction.do"
@@ -69,6 +71,7 @@ CSV_HEADER = [
 
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 DATA_DIR.mkdir(parents=True, exist_ok=True)
+RESPALDO_DIR.mkdir(parents=True, exist_ok=True)
 
 logging.basicConfig(
     level=logging.INFO,
@@ -139,6 +142,7 @@ async ({ baseUrl, siteKey, regiones, productos }) => {
   const warnings = [];
   const stationRows = [];
   const provMap = {};
+  const htmlDump = [];
 
   // 1) Provincias por departamento
   for (const depCode of Object.keys(regiones)) {
@@ -154,6 +158,7 @@ async ({ baseUrl, siteKey, regiones, productos }) => {
     });
     provMap[depCode] = parseProvincias(html);
     if (provMap[depCode].length === 0) warnings.push(`SIN_PROVINCIAS ${depName}`);
+    htmlDump.push({ label: `PROVINCIAS | ${depName}`, html });
   }
 
   // 2) Estaciones por provincia x producto (distrito=TODOS trae todo de una vez)
@@ -173,6 +178,7 @@ async ({ baseUrl, siteKey, regiones, productos }) => {
         warnings.push(`NO_TABLE ${depName}/${prov.name}/${prodName} intento ${attempt}`);
         continue; // reintentar: probablemente fallo de token/sesion
       }
+      htmlDump.push({ label: `${depName} | ${prov.name} | ${prodName}`, html });
       return rows; // puede ser [] legitimamente (provincia sin estaciones para ese producto)
     }
     return null; // agoto reintentos
@@ -202,7 +208,7 @@ async ({ baseUrl, siteKey, regiones, productos }) => {
     }
   }
 
-  return { stationRows, warnings, provMap };
+  return { stationRows, warnings, provMap, htmlDump };
 }
 """
 
@@ -271,10 +277,27 @@ def build_csv_rows(station_rows: list[dict], fecha: str) -> list[list[str]]:
     return [pair[0] for pair in rows_with_orig]
 
 
+def write_respaldo_html(html_dump: list[dict], fecha: str, out_path: Path) -> None:
+    """Guarda el HTML crudo de cada respuesta de Facilito, comprimido, como evidencia
+    de que los precios reportados en el CSV corresponden literalmente a lo que la
+    plataforma devolvio ese dia (respalda el origen de la data ante cualquier consulta)."""
+    with gzip.open(out_path, "wt", encoding="utf-8") as f:
+        f.write(f"Respaldo de respuestas crudas de Facilito - {fecha}\n")
+        f.write(f"Generado: {datetime.now().isoformat()}\n")
+        f.write(f"Total de respuestas: {len(html_dump)}\n")
+        for entry in html_dump:
+            f.write("\n" + "=" * 100 + "\n")
+            f.write(f"CONSULTA: {entry['label']}\n")
+            f.write("=" * 100 + "\n")
+            f.write(entry["html"])
+            f.write("\n")
+
+
 def main():
     force = "--force" in sys.argv
     today = date.today().isoformat()
     out_path = DATA_DIR / f"{today}_combustibles.csv"
+    respaldo_path = RESPALDO_DIR / f"{today}_respaldo.html.gz"
 
     if out_path.exists() and not force:
         log.info(f"El archivo de hoy ya existe ({out_path.name}); no se sobrescribe. Usa --force para regenerar.")
@@ -286,6 +309,7 @@ def main():
     station_rows = result["stationRows"]
     warnings = result["warnings"]
     prov_map = result["provMap"]
+    html_dump = result.get("htmlDump", [])
 
     for w in warnings:
         log.warning(w)
@@ -300,6 +324,10 @@ def main():
         writer = csv.writer(f)
         writer.writerow(CSV_HEADER)
         writer.writerows(csv_rows)
+
+    if html_dump and (not respaldo_path.exists() or force):
+        write_respaldo_html(html_dump, today, respaldo_path)
+        log.info(f"Respaldo HTML generado: {respaldo_path} ({len(html_dump)} respuestas)")
 
     # resumen por region para el log
     by_region = {}
