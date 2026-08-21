@@ -45,24 +45,27 @@ st.markdown(
     """
     <style>
     [data-testid="stMain"] {background: linear-gradient(180deg, #EAF0FB 0%, #F2ECE6 100%);}
+    header[data-testid="stHeader"] {display: none !important;}
+    section[data-testid="stSidebar"] {background: #FFFFFF !important;}
+    section[data-testid="stSidebar"] > div {background: #FFFFFF !important;}
     [data-testid="stVerticalBlock"][height] {background: #FFFFFF;}
     .accent-bar {height:4px; margin:-1rem -1rem 0.3rem -1rem; border-radius:8px 8px 0 0;}
     .kpi-tile {border-radius:10px; padding:0.6rem 0.8rem;}
     .kpi-tile .kpi-label {font-size:0.72rem; opacity:0.85;}
-    .kpi-tile .kpi-value {font-size:1.25rem; font-weight:600; margin-top:2px;}
-    .block-container {padding-top: 3.6rem; padding-bottom: 0.5rem;}
+    .kpi-tile .kpi-value {font-size:1.25rem; font-weight:600; margin-top:2px; text-align:center;}
+    .block-container {padding-top: 3.6rem; padding-bottom: 0.15rem;}
     h3, h4, h5 {font-size: 0.92rem !important; margin: 0 0 0.2rem 0 !important;}
     [data-testid="stMetricValue"] {font-size: 1.2rem;}
     [data-testid="stMetricLabel"] {font-size: 0.72rem;}
     .rank-row {display:flex; justify-content:space-between; font-size:12px; padding:1px 0; border-bottom:1px solid rgba(128,128,128,0.15);}
     .rank-row:last-child {border-bottom:none;}
-    div[data-testid="stVerticalBlock"] {gap: 0.5rem !important;}
-    [data-testid="stHorizontalBlock"] {gap: 0.6rem !important; align-items: stretch !important;}
-    div[data-testid="stColumn"] {padding: 0.35rem !important; display: flex !important; flex-direction: column !important;}
+    div[data-testid="stVerticalBlock"] {gap: 0.25rem !important;}
+    [data-testid="stHorizontalBlock"] {gap: 0.5rem !important; align-items: stretch !important;}
+    div[data-testid="stColumn"] {padding: 0.15rem !important; display: flex !important; flex-direction: column !important;}
     div[data-testid="stColumn"] > div {flex: 1 1 auto !important; display: flex !important; flex-direction: column !important;}
     div[data-testid="stColumn"] > div > [data-testid="stVerticalBlock"] {flex: 1 1 auto !important; height: 100% !important;}
     hr {margin: 0.4rem 0 !important;}
-    section[data-testid="stSidebar"] .block-container {padding-top: 2.2rem;}
+    [data-testid="stSidebarUserContent"] {padding-top: 2.75rem !important;}
     section[data-testid="stSidebar"] button {
         min-height: 1.7rem !important;
         height: 1.7rem !important;
@@ -183,40 +186,52 @@ def get_logo_base64() -> str:
     return base64.b64encode(LOGO_PATH.read_bytes()).decode("utf-8")
 
 
-def render_sidebar_header():
+def render_top_bar(last_update: str):
     logo_b64 = get_logo_base64()
     logo_html = (
-        f'<img src="data:image/png;base64,{logo_b64}" style="max-width:100%; max-height:52px; width:auto; object-fit:contain;">'
+        f'<img src="data:image/png;base64,{logo_b64}" style="max-height:75px; max-width:202px; width:auto; object-fit:contain;">'
         if logo_b64
-        else '<span style="font-size:12px; color:var(--text-secondary,#888);">Logo Logi Solution</span>'
+        else '<span style="font-size:12px; color:#012C63;">Logo Logi Solution</span>'
     )
-    st.sidebar.markdown(
+    st.markdown(
         f"""
-        <div style="height:210px; overflow:hidden; display:flex; flex-direction:column; justify-content:center; gap:8px;">
-          <div style="border:1px solid rgba(128,128,128,0.35); border-radius:8px; padding:6px; text-align:center;
-                      display:flex; align-items:center; justify-content:center; background:white;">
-            {logo_html}
+        <div style="position:fixed; top:0; left:0; width:300px; height:100px; z-index:9999999;
+                    background:#FFFFFF; display:flex; align-items:center; justify-content:center; padding:10px;">
+          {logo_html}
+        </div>
+        <div style="position:fixed; top:0; left:300px; width:calc(100% - 300px); height:56px; z-index:9999999;
+                    background:linear-gradient(90deg, #012C63 0%, #8F3D1A 100%); display:flex;
+                    justify-content:space-between; align-items:center; padding:0 1.3rem; color:#FFFFFF;">
+          <div style="font-weight:600; font-size:1.05rem;">Panel de precios de combustibles</div>
+          <div style="font-size:0.78rem; opacity:0.92;">Última actualización: {last_update}</div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
+def render_sidebar_header():
+    st.sidebar.markdown(
+        """
+        <div style="text-align:center;">
+          <div style="font-size:1rem; font-weight:600;">Análisis de precios de combustibles</div>
+          <div style="font-size:0.78rem; color:var(--text-secondary,#888); margin-top:4px;">
+            La Libertad · Ica · Piura · Lima · Lambayeque
           </div>
-          <div>
-            <div style="font-size:1rem; font-weight:600;">Análisis de precios de combustibles</div>
-            <div style="font-size:0.78rem; color:var(--text-secondary,#888); margin-top:4px;">
-              La Libertad · Ica · Piura · Lima · Lambayeque
-            </div>
-            <div style="font-size:0.7rem; color:var(--text-secondary,#888); margin-top:6px;">
-              Fuente de precios: <a href="https://www.facilito.gob.pe/facilito/pages/facilito/buscadorEESS.jsp" target="_blank">facilito.gob.pe</a>
-            </div>
-            <div style="font-size:0.66rem; color:var(--text-secondary,#888); margin-top:4px;">
-              Datos actualizados diariamente a la 1:00 pm (hora Perú).
-            </div>
-            <div style="font-size:0.66rem; color:var(--text-secondary,#888); margin-top:3px;">
-              Uso con fines de análisis estadístico; no constituye el precio oficial vigente.
-            </div>
+          <div style="font-size:0.7rem; color:var(--text-secondary,#888); margin-top:6px;">
+            Fuente de precios: <a href="https://www.facilito.gob.pe/facilito/pages/facilito/buscadorEESS.jsp" target="_blank">facilito.gob.pe</a>
+          </div>
+          <div style="font-size:0.66rem; color:var(--text-secondary,#888); margin-top:4px;">
+            Datos actualizados diariamente a la 1:00 pm (hora Perú).
+          </div>
+          <div style="font-size:0.66rem; color:var(--text-secondary,#888); margin-top:3px;">
+            Uso con fines de análisis estadístico; no constituye el precio oficial vigente.
           </div>
         </div>
         """,
         unsafe_allow_html=True,
     )
-    st.sidebar.markdown("<div style='height:30px'></div>", unsafe_allow_html=True)
+    st.sidebar.markdown("<div style='height:34px'></div>", unsafe_allow_html=True)
 
 
 def render_calendar(available_dates: set):
@@ -250,10 +265,26 @@ def render_calendar(available_dates: set):
 
     header_cols = st.sidebar.columns(7)
     for c, lbl in zip(header_cols, DIAS_SEMANA):
-        c.markdown(f"<div style='text-align:center;font-size:11px;color:gray'>{lbl}</div>", unsafe_allow_html=True)
+        c.markdown(f"<div style='text-align:center;font-size:11px;color:gray;padding-bottom:16px;'>{lbl}</div>", unsafe_allow_html=True)
 
     start = st.session_state.range_start
     end = st.session_state.range_end
+
+    def _select_day(d):
+        cur_start = st.session_state.range_start
+        cur_end = st.session_state.range_end
+        if st.session_state.date_mode == "Día":
+            st.session_state.range_start = d
+            st.session_state.range_end = d
+        else:
+            if cur_start is None or cur_end is not None:
+                st.session_state.range_start = d
+                st.session_state.range_end = None
+            else:
+                if d < cur_start:
+                    st.session_state.range_start, st.session_state.range_end = d, cur_start
+                else:
+                    st.session_state.range_end = d
 
     for week in weeks:
         cols = st.sidebar.columns(7)
@@ -269,26 +300,15 @@ def render_calendar(available_dates: set):
                 in_selection = d == start
             else:
                 in_selection = start <= d <= end
-            if c.button(
+            c.button(
                 str(day),
                 key=f"day_{d.isoformat()}",
                 disabled=not has_data,
                 type="primary" if in_selection else "secondary",
                 use_container_width=True,
-            ):
-                if st.session_state.date_mode == "Día":
-                    st.session_state.range_start = d
-                    st.session_state.range_end = d
-                else:
-                    if start is None or end is not None:
-                        st.session_state.range_start = d
-                        st.session_state.range_end = None
-                    else:
-                        if d < start:
-                            st.session_state.range_start, st.session_state.range_end = d, start
-                        else:
-                            st.session_state.range_end = d
-                st.rerun()
+                on_click=_select_day,
+                args=(d,),
+            )
 
     if st.session_state.range_start:
         s, e = st.session_state.range_start, st.session_state.range_end
@@ -298,10 +318,11 @@ def render_calendar(available_dates: set):
             st.sidebar.caption(f"Fecha seleccionada: {s.strftime('%d/%m/%Y')}")
         else:
             st.sidebar.caption(f"Del {s.strftime('%d/%m/%Y')} al {e.strftime('%d/%m/%Y')}")
-        if st.sidebar.button("Quitar selección", use_container_width=True, key="clear_selection"):
+        def _clear_selection():
             st.session_state.range_start = None
             st.session_state.range_end = None
-            st.rerun()
+
+        st.sidebar.button("Quitar selección", use_container_width=True, key="clear_selection", on_click=_clear_selection)
     else:
         st.sidebar.caption("Sin fecha seleccionada: se usa el dato más reciente.")
 
@@ -312,28 +333,33 @@ def render_calendar(available_dates: set):
 
 df = load_data()
 
-render_sidebar_header()
-
 if df.empty:
     st.warning("Todavía no hay archivos en data_historica/. El dashboard se llenará a medida que corra la extracción diaria.")
     st.stop()
+
+render_top_bar(df["Fecha"].max().strftime("%d/%m/%Y"))
+render_sidebar_header()
 
 available_dates = set(df["Fecha"].unique())
 render_calendar(available_dates)
 
 f1, f2, f3, f4 = st.columns(4)
 depto_opts = ["Todos"] + sorted(df["Región"].unique())
-depto = f1.selectbox("Departamento", depto_opts)
+depto = f1.selectbox("Departamento", depto_opts, key="sel_depto")
 
 prov_scope = df if depto == "Todos" else df[df["Región"] == depto]
 prov_opts = ["Todas"] + sorted(prov_scope["Provincia"].unique())
-prov = f2.selectbox("Provincia", prov_opts)
+if st.session_state.get("sel_prov") not in prov_opts:
+    st.session_state.sel_prov = "Todas"
+prov = f2.selectbox("Provincia", prov_opts, key="sel_prov")
 
 dist_scope = prov_scope if prov == "Todas" else prov_scope[prov_scope["Provincia"] == prov]
 dist_opts = ["Todos"] + sorted(dist_scope["Distrito"].unique())
-dist = f3.selectbox("Distrito", dist_opts)
+if st.session_state.get("sel_dist") not in dist_opts:
+    st.session_state.sel_dist = "Todos"
+dist = f3.selectbox("Distrito", dist_opts, key="sel_dist")
 
-producto = f4.selectbox("Combustible", PRODUCTOS)
+producto = f4.selectbox("Combustible", PRODUCTOS, key="sel_producto")
 
 df_scoped = scoped(df, depto, prov, dist)
 
@@ -379,10 +405,11 @@ with k4:
 
 # --- Fila 1: comparativa por departamento | top distritos ---
 r1c1, r1c2 = st.columns(2)
-CARD_H = 250
+CARD_H_ROW1 = 220
+CARD_H_ROW2 = 237
 
 with r1c1:
-    with st.container(border=True, height=CARD_H):
+    with st.container(border=True, height=CARD_H_ROW1):
         accent_bar("#012C63")
         st.markdown(f"##### Precio promedio por departamento · {producto}")
         d = df[(df["Fecha"] >= fecha_ini) & (df["Fecha"] <= fecha_fin) & (df["Tipo_Combustible"] == producto)]
@@ -393,13 +420,13 @@ with r1c1:
             st.plotly_chart(ranked_bar(agg, "Región", "Precio_Soles_Galon"), use_container_width=True, key="dep_chart")
 
 with r1c2:
-    with st.container(border=True, height=CARD_H):
+    with st.container(border=True, height=CARD_H_ROW1):
         accent_bar("#CB1E1E")
         st.markdown(f"##### Top distritos más baratos · {producto}")
         agg = dia_scope_fuel.groupby("Distrito")["Precio_Soles_Galon"].mean().reset_index()
         render_ranked_list(agg, "Distrito")
         if not agg.empty:
-            st.markdown("<div style='height:2px'></div>", unsafe_allow_html=True)
+            st.container(height=9, border=False)
             with st.expander(f"Ver los {len(agg)} distritos (menor a mayor)"):
                 st.dataframe(
                     agg.sort_values("Precio_Soles_Galon").rename(columns={"Precio_Soles_Galon": "Precio (S/)"}).reset_index(drop=True),
@@ -414,7 +441,7 @@ with r1c2:
 # --- Fila 2: evaluación entre proveedores | evolución de precios ---
 r2c1, r2c2 = st.columns(2)
 with r2c1:
-    with st.container(border=True, height=CARD_H):
+    with st.container(border=True, height=CARD_H_ROW2):
         accent_bar("#E94217")
         st.markdown(f"##### Evaluación entre proveedores · {producto}")
         prov_agg = (
@@ -425,7 +452,7 @@ with r2c1:
         )
         render_ranked_list(prov_agg, "Proveedor")
         if not prov_agg.empty:
-            st.markdown("<div style='height:2px'></div>", unsafe_allow_html=True)
+            st.container(height=9, border=False)
             with st.expander(f"Ver los {len(prov_agg)} proveedores (menor a mayor)"):
                 st.dataframe(
                     prov_agg.sort_values("Precio_Soles_Galon").rename(columns={"Precio_Soles_Galon": "Precio (S/)"}).reset_index(drop=True),
@@ -438,7 +465,7 @@ with r2c1:
                 )
 
 with r2c2:
-    with st.container(border=True, height=CARD_H):
+    with st.container(border=True, height=CARD_H_ROW2):
         accent_bar("#8F3D1A")
         top_row1, top_row2 = st.columns([3, 2])
         top_row1.markdown("##### Evolución de precios")
@@ -474,7 +501,7 @@ with r2c2:
             else:
                 fig.add_vrect(x0=s, x1=e, fillcolor="gray", opacity=0.15, line_width=0)
         if granularidad == "Diaria":
-            fig.update_xaxes(tickformat="%d/%m")
+            fig.update_xaxes(tickformat="%d/%m", dtick="D1")
         fig.update_layout(
             height=CHART_H, margin=dict(l=0, r=0, t=5, b=0), yaxis_title="S/ por galón", xaxis_title=None,
             legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1, font=dict(size=10)),
