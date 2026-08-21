@@ -28,14 +28,32 @@ jobs:
       - name: Ejecutar scraper
         run: python scripts/scraper_facilito.py
 
-      - name: Commit y push del archivo generado
+      - name: Commit y push del CSV (repositorio publico)
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data_historica/ respaldo_html/
+          git add data_historica/
           if git diff --cached --quiet; then
             echo "Sin cambios para commitear"
           else
             git commit -m "Datos del $(date -u +'%Y-%m-%d')"
+            git push
+          fi
+
+      - name: Commit y push del respaldo HTML (repositorio privado)
+        if: hashFiles('respaldo_html/*.gz') != ''
+        env:
+          PRIVATE_REPO_TOKEN: ${{ secrets.PRIVATE_REPO_TOKEN }}
+        run: |
+          git clone https://x-access-token:${PRIVATE_REPO_TOKEN}@github.com/seminarioalex08-bit/combustibles-facilito-respaldo.git /tmp/respaldo-repo
+          cp respaldo_html/*.gz /tmp/respaldo-repo/respaldo_html/
+          cd /tmp/respaldo-repo
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add respaldo_html/
+          if git diff --cached --quiet; then
+            echo "Sin cambios para commitear"
+          else
+            git commit -m "Respaldo del $(date -u +'%Y-%m-%d')"
             git push
           fi
