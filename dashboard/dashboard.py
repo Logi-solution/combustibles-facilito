@@ -125,7 +125,25 @@ st.markdown(
             overflow: visible !important;
         }
         [data-testid="stSidebarCollapseButton"] {display: flex !important;}
-        [data-testid="collapsedControl"] {display: flex !important;}
+        header[data-testid="stHeader"] {
+            display: block !important;
+            position: static !important;
+            height: 0 !important;
+            min-height: 0 !important;
+            background: transparent !important;
+            pointer-events: none !important;
+        }
+        [data-testid="stToolbarActions"], [data-testid="stMainMenu"] {display: none !important;}
+        [data-testid="stExpandSidebarButton"] {
+            display: flex !important;
+            position: fixed !important;
+            top: 12px !important;
+            right: 12px !important;
+            z-index: 999999999 !important;
+            pointer-events: auto !important;
+            background: #FFFFFF !important;
+            border-radius: 6px !important;
+        }
     }
     </style>
     """,
