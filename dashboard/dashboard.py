@@ -124,8 +124,8 @@ st.markdown(
             max-height: none !important;
             overflow: visible !important;
         }
+        [data-testid="stSidebarCollapseButton"] {display: flex !important;}
         [data-testid="collapsedControl"] {display: flex !important;}
-        button[data-testid="baseButton-headerNoPadding"] {display: flex !important;}
     }
     </style>
     """,
