@@ -97,6 +97,36 @@ st.markdown(
         display: none !important;
         width: 0 !important;
     }
+
+    @media (max-width: 768px) {
+        .lg-topbar-logo {
+            position: static !important;
+            width: 100% !important;
+            height: 64px !important;
+        }
+        .lg-topbar-title {
+            position: static !important;
+            width: 100% !important;
+            height: auto !important;
+            flex-direction: column !important;
+            align-items: flex-start !important;
+            gap: 4px;
+            padding: 10px 1.3rem !important;
+        }
+        .block-container {padding-top: 0.6rem !important;}
+        [data-testid="stHorizontalBlock"] {flex-direction: column !important;}
+        div[data-testid="stColumn"] {width: 100% !important; flex: 1 1 100% !important;}
+        .st-key-card_dep, .st-key-card_dep > div, .st-key-card_dep [data-testid="stVerticalBlock"],
+        .st-key-card_topdist, .st-key-card_topdist > div, .st-key-card_topdist [data-testid="stVerticalBlock"],
+        .st-key-card_prov, .st-key-card_prov > div, .st-key-card_prov [data-testid="stVerticalBlock"],
+        .st-key-card_evo, .st-key-card_evo > div, .st-key-card_evo [data-testid="stVerticalBlock"] {
+            height: auto !important;
+            max-height: none !important;
+            overflow: visible !important;
+        }
+        [data-testid="collapsedControl"] {display: flex !important;}
+        button[data-testid="baseButton-headerNoPadding"] {display: flex !important;}
+    }
     </style>
     """,
     unsafe_allow_html=True,
@@ -195,11 +225,11 @@ def render_top_bar(last_update: str):
     )
     st.markdown(
         f"""
-        <div style="position:fixed; top:0; left:0; width:300px; height:100px; z-index:9999999;
+        <div class="lg-topbar-logo" style="position:fixed; top:0; left:0; width:300px; height:100px; z-index:9999999;
                     background:#FFFFFF; display:flex; align-items:center; justify-content:center; padding:10px;">
           {logo_html}
         </div>
-        <div style="position:fixed; top:0; left:300px; width:calc(100% - 300px); height:56px; z-index:9999999;
+        <div class="lg-topbar-title" style="position:fixed; top:0; left:300px; width:calc(100% - 300px); height:56px; z-index:9999999;
                     background:linear-gradient(90deg, #012C63 0%, #8F3D1A 100%); display:flex;
                     justify-content:space-between; align-items:center; padding:0 1.3rem; color:#FFFFFF;">
           <div style="font-weight:600; font-size:1.05rem;">Panel de precios de combustibles</div>
@@ -409,7 +439,7 @@ CARD_H_ROW1 = 220
 CARD_H_ROW2 = 237
 
 with r1c1:
-    with st.container(border=True, height=CARD_H_ROW1):
+    with st.container(border=True, height=CARD_H_ROW1, key="card_dep"):
         accent_bar("#012C63")
         st.markdown(f"##### Precio promedio por departamento · {producto}")
         d = df[(df["Fecha"] >= fecha_ini) & (df["Fecha"] <= fecha_fin) & (df["Tipo_Combustible"] == producto)]
@@ -420,7 +450,7 @@ with r1c1:
             st.plotly_chart(ranked_bar(agg, "Región", "Precio_Soles_Galon"), use_container_width=True, key="dep_chart")
 
 with r1c2:
-    with st.container(border=True, height=CARD_H_ROW1):
+    with st.container(border=True, height=CARD_H_ROW1, key="card_topdist"):
         accent_bar("#CB1E1E")
         st.markdown(f"##### Top distritos más baratos · {producto}")
         agg = dia_scope_fuel.groupby("Distrito")["Precio_Soles_Galon"].mean().reset_index()
@@ -441,7 +471,7 @@ with r1c2:
 # --- Fila 2: evaluación entre proveedores | evolución de precios ---
 r2c1, r2c2 = st.columns(2)
 with r2c1:
-    with st.container(border=True, height=CARD_H_ROW2):
+    with st.container(border=True, height=CARD_H_ROW2, key="card_prov"):
         accent_bar("#E94217")
         st.markdown(f"##### Evaluación entre proveedores · {producto}")
         prov_agg = (
@@ -465,7 +495,7 @@ with r2c1:
                 )
 
 with r2c2:
-    with st.container(border=True, height=CARD_H_ROW2):
+    with st.container(border=True, height=CARD_H_ROW2, key="card_evo"):
         accent_bar("#8F3D1A")
         top_row1, top_row2 = st.columns([3, 2])
         top_row1.markdown("##### Evolución de precios")
