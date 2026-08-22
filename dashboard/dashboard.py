@@ -102,7 +102,11 @@ st.markdown(
         .lg-topbar-logo {
             position: static !important;
             width: 100% !important;
-            height: 64px !important;
+            height: 70px !important;
+        }
+        .lg-topbar-logo img {
+            max-height: 50px !important;
+            max-width: 160px !important;
         }
         .lg-topbar-title {
             position: static !important;
@@ -114,8 +118,15 @@ st.markdown(
             padding: 10px 1.3rem !important;
         }
         .block-container {padding-top: 0.6rem !important;}
-        [data-testid="stHorizontalBlock"] {flex-direction: column !important;}
-        div[data-testid="stColumn"] {width: 100% !important; flex: 1 1 100% !important;}
+        .st-key-filters_row [data-testid="stHorizontalBlock"], .st-key-kpi_row [data-testid="stHorizontalBlock"],
+        .st-key-row1 [data-testid="stHorizontalBlock"], .st-key-row2 [data-testid="stHorizontalBlock"] {
+            flex-direction: column !important;
+        }
+        .st-key-filters_row [data-testid="stColumn"], .st-key-kpi_row [data-testid="stColumn"],
+        .st-key-row1 [data-testid="stColumn"], .st-key-row2 [data-testid="stColumn"] {
+            width: 100% !important;
+            flex: 1 1 100% !important;
+        }
         .st-key-card_dep, .st-key-card_dep > div, .st-key-card_dep [data-testid="stVerticalBlock"],
         .st-key-card_topdist, .st-key-card_topdist > div, .st-key-card_topdist [data-testid="stVerticalBlock"],
         .st-key-card_prov, .st-key-card_prov > div, .st-key-card_prov [data-testid="stVerticalBlock"],
@@ -391,7 +402,8 @@ render_sidebar_header()
 available_dates = set(df["Fecha"].unique())
 render_calendar(available_dates)
 
-f1, f2, f3, f4 = st.columns(4)
+with st.container(key="filters_row"):
+    f1, f2, f3, f4 = st.columns(4)
 depto_opts = ["Todos"] + sorted(df["Región"].unique())
 depto = f1.selectbox("Departamento", depto_opts, key="sel_depto")
 
@@ -424,7 +436,8 @@ dia_scope_fuel = df_scoped[
 ]
 
 # --- KPIs ---
-k1, k2, k3, k4 = st.columns(4)
+with st.container(key="kpi_row"):
+    k1, k2, k3, k4 = st.columns(4)
 activas = (
     df_scoped[(df_scoped["Fecha"] >= fecha_ini) & (df_scoped["Fecha"] <= fecha_fin)][["Distrito", "Establecimiento"]]
     .drop_duplicates()
@@ -452,7 +465,8 @@ with k4:
     )
 
 # --- Fila 1: comparativa por departamento | top distritos ---
-r1c1, r1c2 = st.columns(2)
+with st.container(key="row1"):
+    r1c1, r1c2 = st.columns(2)
 CARD_H_ROW1 = 220
 CARD_H_ROW2 = 237
 
@@ -487,7 +501,8 @@ with r1c2:
                 )
 
 # --- Fila 2: evaluación entre proveedores | evolución de precios ---
-r2c1, r2c2 = st.columns(2)
+with st.container(key="row2"):
+    r2c1, r2c2 = st.columns(2)
 with r2c1:
     with st.container(border=True, height=CARD_H_ROW2, key="card_prov"):
         accent_bar("#E94217")
