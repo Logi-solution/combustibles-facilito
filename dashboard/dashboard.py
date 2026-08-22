@@ -129,6 +129,15 @@ st.markdown(
             width: 100% !important;
             flex: 1 1 100% !important;
         }
+        section[data-testid="stSidebar"] [data-testid="stHorizontalBlock"] {
+            flex-direction: row !important;
+            flex-wrap: nowrap !important;
+        }
+        section[data-testid="stSidebar"] [data-testid="stColumn"] {
+            width: auto !important;
+            min-width: 0 !important;
+            flex: 1 1 0 !important;
+        }
         .st-key-card_dep, .st-key-card_dep > div, .st-key-card_dep [data-testid="stVerticalBlock"],
         .st-key-card_topdist, .st-key-card_topdist > div, .st-key-card_topdist [data-testid="stVerticalBlock"],
         .st-key-card_prov, .st-key-card_prov > div, .st-key-card_prov [data-testid="stVerticalBlock"],
