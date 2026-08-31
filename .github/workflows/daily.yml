@@ -2,7 +2,7 @@ name: Extraccion diaria Facilito
 
 on:
   schedule:
-    - cron: "0 18 * * *"
+    - cron: "0 14,18,21 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -26,7 +26,7 @@ jobs:
           playwright install --with-deps chromium
 
       - name: Ejecutar scraper
-        run: python scripts/scraper_facilito.py
+        run: python scripts/scraper_facilito.py --force
 
       - name: Commit y push del CSV (repositorio publico)
         run: |
