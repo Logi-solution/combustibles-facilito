@@ -28,5 +28,5 @@ jobs:
       - name: Ping Streamlit app (wake it up if asleep)
         run: |
           echo "--- contenido de guiones/ ---"
-          ls -la guiones/
+          ls -la
           python guiones/keep_alive_streamlit.py
