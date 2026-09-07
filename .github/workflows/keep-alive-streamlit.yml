@@ -26,4 +26,7 @@ jobs:
           playwright install --with-deps chromium
 
       - name: Ping Streamlit app (wake it up if asleep)
-        run: python guiones/keep_alive_streamlit.py
+        run: |
+          echo "--- contenido de guiones/ ---"
+          ls -la guiones/
+          python guiones/keep_alive_streamlit.py
