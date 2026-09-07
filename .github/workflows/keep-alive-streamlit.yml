@@ -1,0 +1,29 @@
+name: Keep Streamlit app awake
+
+on:
+  schedule:
+    # Cada 6 horas (UTC). Streamlit hiberna tras ~12h sin trafico real de
+    # navegador, asi que 4x/dia es mas que suficiente margen.
+    - cron: "0 */6 * * *"
+  workflow_dispatch: {}
+
+jobs:
+  keep-alive:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Playwright
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+
+      - name: Ping Streamlit app (wake it up if asleep)
+        run: python scripts/keep_alive_streamlit.py
