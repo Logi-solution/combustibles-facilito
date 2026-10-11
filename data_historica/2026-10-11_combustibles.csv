@@ -4,10 +4,10 @@
 2026-10-11,La Libertad,Ascope,Ascope,ESTACION DE SERVICIOS INVERSIONES SAN LORENZO S.A.C.,Gasolina Premium,25.35
 2026-10-11,La Libertad,Ascope,Ascope,COMBUSTIBLE ZAVALETA PERU E.I.R.L.,Gasolina Regular,23.20
 2026-10-11,La Libertad,Ascope,Ascope,ESTACION DE SERVICIOS INVERSIONES SAN LORENZO S.A.C.,Gasolina Regular,23.95
-2026-10-11,La Libertad,Ascope,Casa Grande,GASOLINERA DON ARMANDO S.A.C.,Diesel DB5,26.80
+2026-10-11,La Libertad,Ascope,Casa Grande,GASOLINERA DON ARMANDO S.A.C.,Diesel DB5,26.90
 2026-10-11,La Libertad,Ascope,Casa Grande,INVERSIONES Y SERVICIOS  GENERALES SANTA TERESITA SAC.,Diesel DB5,27.50
-2026-10-11,La Libertad,Ascope,Casa Grande,GASOLINERA DON ARMANDO S.A.C.,Gasolina Premium,24.40
-2026-10-11,La Libertad,Ascope,Casa Grande,GASOLINERA DON ARMANDO S.A.C.,Gasolina Regular,23.40
+2026-10-11,La Libertad,Ascope,Casa Grande,GASOLINERA DON ARMANDO S.A.C.,Gasolina Premium,24.60
+2026-10-11,La Libertad,Ascope,Casa Grande,GASOLINERA DON ARMANDO S.A.C.,Gasolina Regular,23.60
 2026-10-11,La Libertad,Ascope,Casa Grande,INVERSIONES Y SERVICIOS  GENERALES SANTA TERESITA SAC.,Gasolina Regular,24.00
 2026-10-11,La Libertad,Ascope,Chicama,ESTACION DE SERVICIOS YESSENIA S.A.C.,Diesel DB5,24.48
 2026-10-11,La Libertad,Ascope,Chicama,ESTACION VALLE CHICAMA S.A.C,Diesel DB5,25.85
@@ -258,7 +258,7 @@
 2026-10-11,La Libertad,Sanchez Carrion,Cochorco,CORPORACION CHAGUALITO S.A.C.,Diesel DB5,29.80
 2026-10-11,La Libertad,Sanchez Carrion,Cochorco,CORPORACION CHAGUALITO S.A.C.,Gasolina Premium,26.30
 2026-10-11,La Libertad,Sanchez Carrion,Cochorco,CORPORACION CHAGUALITO S.A.C.,Gasolina Regular,23.50
-2026-10-11,La Libertad,Sanchez Carrion,Huamachuco,CORPORACION HUAMACHUCO ENERGY S.A.C,Diesel DB5,28.66
+2026-10-11,La Libertad,Sanchez Carrion,Huamachuco,CORPORACION HUAMACHUCO ENERGY S.A.C,Diesel DB5,27.70
 2026-10-11,La Libertad,Sanchez Carrion,Huamachuco,EE.SS SANTISTEBAN,Diesel DB5,26.90
 2026-10-11,La Libertad,Sanchez Carrion,Huamachuco,ESTACION DE SERIVICOS COLPACK SAC,Diesel DB5,28.90
 2026-10-11,La Libertad,Sanchez Carrion,Huamachuco,ESTACION DE SERVICIOS DIEGO CUBA E.I.R.L.,Diesel DB5,27.50
@@ -372,7 +372,7 @@
 2026-10-11,La Libertad,Trujillo,Huanchaco,ASTUR FUELS S.A.,Diesel DB5,26.39
 2026-10-11,La Libertad,Trujillo,Huanchaco,COESTI SA  EESS ULTRACOM HUANCHAQUITO,Diesel DB5,27.15
 2026-10-11,La Libertad,Trujillo,Huanchaco,COESTI SA ESS EL MILAGRO,Diesel DB5,27.25
-2026-10-11,La Libertad,Trujillo,Huanchaco,COMERCIALIZADORA Y SERVICIOS BROTHER S.A.C.,Diesel DB5,25.86
+2026-10-11,La Libertad,Trujillo,Huanchaco,COMERCIALIZADORA Y SERVICIOS BROTHER S.A.C.,Diesel DB5,24.99
 2026-10-11,La Libertad,Trujillo,Huanchaco,CONSORCIO DE SERVICIOS SR S.A.C.,Diesel DB5,27.00
 2026-10-11,La Libertad,Trujillo,Huanchaco,EMPRESA DE TRANSPORTES HUANCHACO S.A.,Diesel DB5,26.90
 2026-10-11,La Libertad,Trujillo,Huanchaco,ESTACION DE SERVICIOS E INVERSIONES JIREH S.R.L.,Diesel DB5,25.29
@@ -407,7 +407,7 @@
 2026-10-11,La Libertad,Trujillo,Huanchaco,SERVICENTRO HUANCHACO,Gasolina Premium,25.52
 2026-10-11,La Libertad,Trujillo,Huanchaco,COESTI SA  EESS ULTRACOM HUANCHAQUITO,Gasolina Regular,23.49
 2026-10-11,La Libertad,Trujillo,Huanchaco,COESTI SA ESS EL MILAGRO,Gasolina Regular,23.09
-2026-10-11,La Libertad,Trujillo,Huanchaco,COMERCIALIZADORA Y SERVICIOS BROTHER S.A.C.,Gasolina Regular,22.35
+2026-10-11,La Libertad,Trujillo,Huanchaco,COMERCIALIZADORA Y SERVICIOS BROTHER S.A.C.,Gasolina Regular,22.20
 2026-10-11,La Libertad,Trujillo,Huanchaco,CONSORCIO DE SERVICIOS SR S.A.C.,Gasolina Regular,23.50
 2026-10-11,La Libertad,Trujillo,Huanchaco,EMPRESA DE TRANSPORTES HUANCHACO S.A.,Gasolina Regular,24.30
 2026-10-11,La Libertad,Trujillo,Huanchaco,ESTACION DE SERVICIOS E INVERSIONES JIREH S.R.L.,Gasolina Regular,22.29
@@ -876,12 +876,12 @@
 2026-10-11,Ica,Chincha,Chincha Baja,ENERGIGAS S.A.C.,Gasolina Regular,20.99
 2026-10-11,Ica,Chincha,Chincha Baja,GRIFOS CARU SRL,Gasolina Regular,23.55
 2026-10-11,Ica,Chincha,Chincha Baja,MULTISERVICIOS ECOGAS S.A.C.,Gasolina Regular,21.49
-2026-10-11,Ica,Chincha,El Carmen,CORPORACION Y SERVICIOS EL SALVADOR S.A.C.,Diesel DB5,25.75
+2026-10-11,Ica,Chincha,El Carmen,CORPORACION Y SERVICIOS EL SALVADOR S.A.C.,Diesel DB5,25.19
 2026-10-11,Ica,Chincha,El Carmen,EMPRESA DE TRANSPORTES SAGRADO CORAZON DE JESUS S.A,Diesel DB5,26.40
 2026-10-11,Ica,Chincha,El Carmen,GRIFO DEL CARMEN NUEVA PANAMERICANA S.A.C.,Diesel DB5,25.65
-2026-10-11,Ica,Chincha,El Carmen,CORPORACION Y SERVICIOS EL SALVADOR S.A.C.,Gasolina Premium,24.19
+2026-10-11,Ica,Chincha,El Carmen,CORPORACION Y SERVICIOS EL SALVADOR S.A.C.,Gasolina Premium,23.99
 2026-10-11,Ica,Chincha,El Carmen,GRIFO DEL CARMEN NUEVA PANAMERICANA S.A.C.,Gasolina Premium,23.99
-2026-10-11,Ica,Chincha,El Carmen,CORPORACION Y SERVICIOS EL SALVADOR S.A.C.,Gasolina Regular,22.99
+2026-10-11,Ica,Chincha,El Carmen,CORPORACION Y SERVICIOS EL SALVADOR S.A.C.,Gasolina Regular,22.69
 2026-10-11,Ica,Chincha,El Carmen,EMPRESA DE TRANSPORTES SAGRADO CORAZON DE JESUS S.A,Gasolina Regular,22.90
 2026-10-11,Ica,Chincha,El Carmen,GRIFO DEL CARMEN NUEVA PANAMERICANA S.A.C.,Gasolina Regular,22.89
 2026-10-11,Ica,Chincha,Grocio Prado,ESTACION DE SERVICIO SAN CRISTOBAL S.A.C,Diesel DB5,25.50
@@ -1182,9 +1182,12 @@
 2026-10-11,Ica,Ica,Tate,GAS 777 SOCIEDAD ANONIMA CERRADA,Gasolina Regular,20.50
 2026-10-11,Ica,Ica,Tate,GRIFO TATE S.R.L.,Gasolina Regular,20.97
 2026-10-11,Ica,Nazca,El Ingenio,GRIFO SAN IGNACIO,Diesel DB5,24.69
+2026-10-11,Ica,Nazca,El Ingenio,GRIFO SAN IGNACIO,Gasolina Premium,22.59
 2026-10-11,Ica,Nazca,El Ingenio,GRIFO SAN IGNACIO,Gasolina Regular,21.79
 2026-10-11,Ica,Nazca,Marcona,ESTACION DE SERVICIOS MARCONA S.A.C.,Diesel DB5,26.97
 2026-10-11,Ica,Nazca,Marcona,SERVICENTRO SANTA ROSA EIRL,Diesel DB5,27.90
+2026-10-11,Ica,Nazca,Marcona,ESTACION DE SERVICIOS MARCONA S.A.C.,Gasolina Premium,24.34
+2026-10-11,Ica,Nazca,Marcona,SERVICENTRO SANTA ROSA EIRL,Gasolina Premium,25.70
 2026-10-11,Ica,Nazca,Marcona,ESTACION DE SERVICIOS MARCONA S.A.C.,Gasolina Regular,23.46
 2026-10-11,Ica,Nazca,Marcona,SERVICENTRO SANTA ROSA EIRL,Gasolina Regular,24.90
 2026-10-11,Ica,Nazca,Nazca,COESTI S.A,Diesel DB5,24.25
@@ -1202,6 +1205,19 @@
 2026-10-11,Ica,Nazca,Nazca,TRANS MURIEL INVER S.A.C.,Diesel DB5,24.15
 2026-10-11,Ica,Nazca,Nazca,WARI SERVICE SAC,Diesel DB5,24.49
 2026-10-11,Ica,Nazca,Nazca,XACT PERU S.A.C.,Diesel DB5,23.85
+2026-10-11,Ica,Nazca,Nazca,COESTI S.A,Gasolina Premium,22.99
+2026-10-11,Ica,Nazca,Nazca,CORPORACION GRIFERA DEL SUR S.A.C.,Gasolina Premium,22.79
+2026-10-11,Ica,Nazca,Nazca,ESTACION DE COMBUSTIBLES EL SOL S.A.C.,Gasolina Premium,22.99
+2026-10-11,Ica,Nazca,Nazca,ESTACION DE SERVICIOS EL OASIS DE ICA SAC,Gasolina Premium,22.69
+2026-10-11,Ica,Nazca,Nazca,ESTACION DE SERVICIOS EL SOL DE CAMANA S.A.C.,Gasolina Premium,22.59
+2026-10-11,Ica,Nazca,Nazca,ESTACION DE SERVICIOS EL SOL S.R.L.,Gasolina Premium,22.59
+2026-10-11,Ica,Nazca,Nazca,ESTACION DE SERVICIOS NASCA S.A.C.,Gasolina Premium,22.99
+2026-10-11,Ica,Nazca,Nazca,ESTACION DE SERVICIOS SACRAMENTO S.A.C,Gasolina Premium,22.99
+2026-10-11,Ica,Nazca,Nazca,GRUPO MINSURCOM EIRL,Gasolina Premium,23.79
+2026-10-11,Ica,Nazca,Nazca,PETROSUR NAZCA S.A.C.,Gasolina Premium,21.99
+2026-10-11,Ica,Nazca,Nazca,SERVICIOS GENERALES FULL GRIFOS DEL PERU S.A.C.,Gasolina Premium,24.50
+2026-10-11,Ica,Nazca,Nazca,TRANS MURIEL INVER S.A.C.,Gasolina Premium,22.45
+2026-10-11,Ica,Nazca,Nazca,WARI SERVICE SAC,Gasolina Premium,22.59
 2026-10-11,Ica,Nazca,Nazca,COESTI S.A,Gasolina Regular,21.45
 2026-10-11,Ica,Nazca,Nazca,COMBUSAT S.A.C.,Gasolina Regular,21.50
 2026-10-11,Ica,Nazca,Nazca,CORPORACION GRIFERA DEL SUR S.A.C.,Gasolina Regular,21.79
@@ -1223,6 +1239,11 @@
 2026-10-11,Ica,Nazca,Vista Alegre,GRIFO GIANPIERO S.A.C.,Diesel DB5,24.50
 2026-10-11,Ica,Nazca,Vista Alegre,GRIFO PECSA PETRO NAZCA SAC,Diesel DB5,24.14
 2026-10-11,Ica,Nazca,Vista Alegre,PETROFAST S.A.C.,Diesel DB5,24.80
+2026-10-11,Ica,Nazca,Vista Alegre,C & M RED SOCIEDAD ANONIMA CERRADA - C & M RED  S.A.C,Gasolina Premium,22.49
+2026-10-11,Ica,Nazca,Vista Alegre,COESTI S.A.,Gasolina Premium,23.39
+2026-10-11,Ica,Nazca,Vista Alegre,ESTACION DE SERVICIOS LEONOR S.A.C.,Gasolina Premium,23.49
+2026-10-11,Ica,Nazca,Vista Alegre,GRIFO GIANPIERO S.A.C.,Gasolina Premium,22.90
+2026-10-11,Ica,Nazca,Vista Alegre,PETROFAST S.A.C.,Gasolina Premium,22.90
 2026-10-11,Ica,Nazca,Vista Alegre,C & M RED SOCIEDAD ANONIMA CERRADA - C & M RED  S.A.C,Gasolina Regular,21.99
 2026-10-11,Ica,Nazca,Vista Alegre,COESTI S.A.,Gasolina Regular,22.15
 2026-10-11,Ica,Nazca,Vista Alegre,ESTACION DE SERVICIOS LEONOR S.A.C.,Gasolina Regular,22.39
@@ -1381,8 +1402,8 @@
 2026-10-11,Piura,Huancabamba,Huancabamba,ESTACION DE SERVICIO SR. DE LA BUENA ESPERANZA EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA,Diesel DB5,28.20
 2026-10-11,Piura,Huancabamba,Huancabamba,ESTACION DE SERVICIOS BEMART E.I.R.L.,Diesel DB5,27.20
 2026-10-11,Piura,Huancabamba,Huancabamba,ESTACION DE SERVICIOS EL MATUTE S.C.R.L,Diesel DB5,26.90
-2026-10-11,Piura,Huancabamba,Huancabamba,ESTACION DE SERVICIOS JANS S.R.L.,Diesel DB5,28.20
-2026-10-11,Piura,Huancabamba,Huancabamba,ESTACION DE SERVICIOS NESTOR RAMIREZ PALACIOS S.R.L,Diesel DB5,28.15
+2026-10-11,Piura,Huancabamba,Huancabamba,ESTACION DE SERVICIOS JANS S.R.L.,Diesel DB5,26.90
+2026-10-11,Piura,Huancabamba,Huancabamba,ESTACION DE SERVICIOS NESTOR RAMIREZ PALACIOS S.R.L,Diesel DB5,26.85
 2026-10-11,Piura,Huancabamba,Huancabamba,ESTACIONES DE SERVICIOS MERCE S.A.C.,Diesel DB5,26.90
 2026-10-11,Piura,Huancabamba,Huancabamba,ESTACIONES DE SERVICIOS MERCE T & C S.A.C.,Diesel DB5,26.90
 2026-10-11,Piura,Huancabamba,Huancabamba,GRIFO CAROLINA,Diesel DB5,26.90
@@ -1399,8 +1420,8 @@
 2026-10-11,Piura,Huancabamba,Huancabamba,ESTACION DE SERVICIO SR. DE LA BUENA ESPERANZA EMPRESA INDIVIDUAL DE RESPONSABILIDAD LIMITADA,Gasolina Regular,24.80
 2026-10-11,Piura,Huancabamba,Huancabamba,ESTACION DE SERVICIOS BEMART E.I.R.L.,Gasolina Regular,24.10
 2026-10-11,Piura,Huancabamba,Huancabamba,ESTACION DE SERVICIOS EL MATUTE S.C.R.L,Gasolina Regular,23.90
-2026-10-11,Piura,Huancabamba,Huancabamba,ESTACION DE SERVICIOS JANS S.R.L.,Gasolina Regular,24.80
-2026-10-11,Piura,Huancabamba,Huancabamba,ESTACION DE SERVICIOS NESTOR RAMIREZ PALACIOS S.R.L,Gasolina Regular,24.75
+2026-10-11,Piura,Huancabamba,Huancabamba,ESTACION DE SERVICIOS JANS S.R.L.,Gasolina Regular,23.90
+2026-10-11,Piura,Huancabamba,Huancabamba,ESTACION DE SERVICIOS NESTOR RAMIREZ PALACIOS S.R.L,Gasolina Regular,23.85
 2026-10-11,Piura,Huancabamba,Huancabamba,ESTACIONES DE SERVICIOS MERCE S.A.C.,Gasolina Regular,23.90
 2026-10-11,Piura,Huancabamba,Huancabamba,ESTACIONES DE SERVICIOS MERCE T & C S.A.C.,Gasolina Regular,23.90
 2026-10-11,Piura,Huancabamba,Huancabamba,GRIFO CAROLINA,Gasolina Regular,23.90
@@ -1848,9 +1869,9 @@
 2026-10-11,Piura,Sechura,Bernal,ESTACION DE SERVICIOS LUBERK S.A.C,Diesel DB5,26.99
 2026-10-11,Piura,Sechura,Bernal,ESTACION DE SERVICIOS LUBERK S.A.C,Gasolina Premium,24.19
 2026-10-11,Piura,Sechura,Bernal,ESTACION DE SERVICIOS LUBERK S.A.C,Gasolina Regular,23.29
-2026-10-11,Piura,Sechura,Cristo Nos Valga,GASOLINERAS PIURA S.R.L.,Diesel DB5,26.39
-2026-10-11,Piura,Sechura,Cristo Nos Valga,GASOLINERAS PIURA S.R.L.,Gasolina Premium,24.89
-2026-10-11,Piura,Sechura,Cristo Nos Valga,GASOLINERAS PIURA S.R.L.,Gasolina Regular,22.99
+2026-10-11,Piura,Sechura,Cristo Nos Valga,GASOLINERAS PIURA S.R.L.,Diesel DB5,24.39
+2026-10-11,Piura,Sechura,Cristo Nos Valga,GASOLINERAS PIURA S.R.L.,Gasolina Premium,24.79
+2026-10-11,Piura,Sechura,Cristo Nos Valga,GASOLINERAS PIURA S.R.L.,Gasolina Regular,22.39
 2026-10-11,Piura,Sechura,Rinconada Llicuar,SERVICENTRO SECHURA E.I.R.L.,Diesel DB5,27.55
 2026-10-11,Piura,Sechura,Rinconada Llicuar,SERVICENTRO SECHURA E.I.R.L.,Gasolina Premium,25.29
 2026-10-11,Piura,Sechura,Rinconada Llicuar,SERVICENTRO SECHURA E.I.R.L.,Gasolina Regular,23.58
@@ -2219,7 +2240,7 @@
 2026-10-11,Lima,Canta,Santa Rosa De Quives,GRIFO SAN IGNACIO S.A.C.,Diesel DB5,23.99
 2026-10-11,Lima,Canta,Santa Rosa De Quives,GRIFO YANGAS,Diesel DB5,23.60
 2026-10-11,Lima,Canta,Santa Rosa De Quives,MEGA ESTACION DE SERVICIOS INVERSOL S.A.,Diesel DB5,23.59
-2026-10-11,Lima,Canta,Santa Rosa De Quives,SERVICENTRO JPHV S.A.C.,Diesel DB5,23.69
+2026-10-11,Lima,Canta,Santa Rosa De Quives,SERVICENTRO JPHV S.A.C.,Diesel DB5,23.58
 2026-10-11,Lima,Canta,Santa Rosa De Quives,GASOCENTRO TADUP SAC,Gasolina Premium,22.69
 2026-10-11,Lima,Canta,Santa Rosa De Quives,GLODY ZUÑIGA SANCHEZ,Gasolina Premium,22.99
 2026-10-11,Lima,Canta,Santa Rosa De Quives,GRIFO SAN IGNACIO S.A.C.,Gasolina Premium,22.39
@@ -2232,20 +2253,20 @@
 2026-10-11,Lima,Canta,Santa Rosa De Quives,GRIFO YANGAS,Gasolina Regular,20.80
 2026-10-11,Lima,Canta,Santa Rosa De Quives,MEGA ESTACION DE SERVICIOS INVERSOL S.A.,Gasolina Regular,20.95
 2026-10-11,Lima,Canta,Santa Rosa De Quives,SERVICENTRO JPHV S.A.C.,Gasolina Regular,20.45
-2026-10-11,Lima,Cañete,Asia,ASIA GRIFOS Y SERVICIOS GENERALES SOCIEDAD ANONIMA CERRADA,Diesel DB5,24.49
+2026-10-11,Lima,Cañete,Asia,ASIA GRIFOS Y SERVICIOS GENERALES SOCIEDAD ANONIMA CERRADA,Diesel DB5,24.19
 2026-10-11,Lima,Cañete,Asia,COESTI PRIMAX,Diesel DB5,24.39
 2026-10-11,Lima,Cañete,Asia,COESTI S.A.  PRIMAX,Diesel DB5,24.39
 2026-10-11,Lima,Cañete,Asia,ES ASIA  COESTI PRIMAX,Diesel DB5,24.45
 2026-10-11,Lima,Cañete,Asia,ESTACION DE SERVICIOS SAN JOSE S.A.C.,Diesel DB5,24.19
-2026-10-11,Lima,Cañete,Asia,INVERSIONES SALCANI S.A.C.,Diesel DB5,24.39
+2026-10-11,Lima,Cañete,Asia,INVERSIONES SALCANI S.A.C.,Diesel DB5,24.19
 2026-10-11,Lima,Cañete,Asia,KATHERINE ANALLI MANCO ARIAS,Diesel DB5,24.89
-2026-10-11,Lima,Cañete,Asia,ASIA GRIFOS Y SERVICIOS GENERALES SOCIEDAD ANONIMA CERRADA,Gasolina Premium,22.85
+2026-10-11,Lima,Cañete,Asia,ASIA GRIFOS Y SERVICIOS GENERALES SOCIEDAD ANONIMA CERRADA,Gasolina Premium,22.75
 2026-10-11,Lima,Cañete,Asia,COESTI PRIMAX,Gasolina Premium,22.69
 2026-10-11,Lima,Cañete,Asia,COESTI S.A.  PRIMAX,Gasolina Premium,22.69
 2026-10-11,Lima,Cañete,Asia,ES ASIA  COESTI PRIMAX,Gasolina Premium,22.75
 2026-10-11,Lima,Cañete,Asia,ESTACION DE SERVICIOS SAN JOSE S.A.C.,Gasolina Premium,21.99
 2026-10-11,Lima,Cañete,Asia,INVERSIONES SALCANI S.A.C.,Gasolina Premium,22.69
-2026-10-11,Lima,Cañete,Asia,ASIA GRIFOS Y SERVICIOS GENERALES SOCIEDAD ANONIMA CERRADA,Gasolina Regular,20.99
+2026-10-11,Lima,Cañete,Asia,ASIA GRIFOS Y SERVICIOS GENERALES SOCIEDAD ANONIMA CERRADA,Gasolina Regular,20.95
 2026-10-11,Lima,Cañete,Asia,COESTI PRIMAX,Gasolina Regular,20.95
 2026-10-11,Lima,Cañete,Asia,COESTI S.A.  PRIMAX,Gasolina Regular,20.95
 2026-10-11,Lima,Cañete,Asia,ES ASIA  COESTI PRIMAX,Gasolina Regular,20.95
@@ -2285,12 +2306,12 @@
 2026-10-11,Lima,Cañete,Imperial,GAS STATION CHAUPIN S.A.C.,Diesel DB5,24.49
 2026-10-11,Lima,Cañete,Imperial,SERVICENTRO VIRGEN DE COCHARCAS S.A.C.,Diesel DB5,24.84
 2026-10-11,Lima,Cañete,Imperial,BILCON GAS S.A.C.,Gasolina Premium,22.68
-2026-10-11,Lima,Cañete,Imperial,COMPAÑIA DE COMBUSTIBLES DEL SUR S.A.C.,Gasolina Premium,21.98
+2026-10-11,Lima,Cañete,Imperial,COMPAÑIA DE COMBUSTIBLES DEL SUR S.A.C.,Gasolina Premium,21.68
 2026-10-11,Lima,Cañete,Imperial,ESTACION DE SERVICIOS VISTA ALEGRE E.I.R.L.,Gasolina Premium,22.89
 2026-10-11,Lima,Cañete,Imperial,GAS STATION CHAUPIN S.A.C.,Gasolina Premium,22.99
 2026-10-11,Lima,Cañete,Imperial,SERVICENTRO VIRGEN DE COCHARCAS S.A.C.,Gasolina Premium,22.51
 2026-10-11,Lima,Cañete,Imperial,BILCON GAS S.A.C.,Gasolina Regular,21.18
-2026-10-11,Lima,Cañete,Imperial,COMPAÑIA DE COMBUSTIBLES DEL SUR S.A.C.,Gasolina Regular,20.58
+2026-10-11,Lima,Cañete,Imperial,COMPAÑIA DE COMBUSTIBLES DEL SUR S.A.C.,Gasolina Regular,20.38
 2026-10-11,Lima,Cañete,Imperial,EMPRESA DE TRANSPORTES UNIDOS S.A.,Gasolina Regular,22.50
 2026-10-11,Lima,Cañete,Imperial,ESTACION DE SERVICIOS VISTA ALEGRE E.I.R.L.,Gasolina Regular,22.09
 2026-10-11,Lima,Cañete,Imperial,GAS STATION CHAUPIN S.A.C.,Gasolina Regular,21.19
@@ -2515,7 +2536,7 @@
 2026-10-11,Lima,Huaral,Huaral,ROLEMAX,Diesel DB5,23.50
 2026-10-11,Lima,Huaral,Huaral,SERVICIOS DE COMBUSTIBLES SANTA FE EIRL,Diesel DB5,24.00
 2026-10-11,Lima,Huaral,Huaral,SHANDHIRA S.A.C.,Diesel DB5,23.59
-2026-10-11,Lima,Huaral,Huaral,SILYCARP INVERSIONES S.A.C.,Diesel DB5,23.29
+2026-10-11,Lima,Huaral,Huaral,SILYCARP INVERSIONES S.A.C.,Diesel DB5,23.25
 2026-10-11,Lima,Huaral,Huaral,ZEVALLOS BLAS AUGUSTO,Diesel DB5,23.54
 2026-10-11,Lima,Huaral,Huaral,ALEGROUP E.I.R.L.,Gasolina Premium,21.39
 2026-10-11,Lima,Huaral,Huaral,COESTI S.A,Gasolina Premium,22.99
@@ -2558,7 +2579,7 @@
 2026-10-11,Lima,Huaral,Huaral,INVERSIONES DIESEL PACIFICO S.A.C.,Gasolina Regular,20.25
 2026-10-11,Lima,Huaral,Huaral,INVERSIONES JULIO III SAC,Gasolina Regular,20.05
 2026-10-11,Lima,Huaral,Huaral,INVERSIONES REJU E.I.R.L.,Gasolina Regular,20.99
-2026-10-11,Lima,Huaral,Huaral,INVERSIONES Y REPRESENTACIONES EGAR S.A.C.,Gasolina Regular,20.95
+2026-10-11,Lima,Huaral,Huaral,INVERSIONES Y REPRESENTACIONES EGAR S.A.C.,Gasolina Regular,20.45
 2026-10-11,Lima,Huaral,Huaral,JULIAN ROSARIO DIAZ ALVA,Gasolina Regular,20.94
 2026-10-11,Lima,Huaral,Huaral,JUSTO CESAR AYBAR BELLIDO,Gasolina Regular,21.99
 2026-10-11,Lima,Huaral,Huaral,NEGOCIACIONES CMC D' HUARAL S.A.C.,Gasolina Regular,20.09
@@ -2575,7 +2596,7 @@
 2026-10-11,Lima,Huarochiri,Matucana,GRUPO CASSA SAC,Gasolina Regular,21.90
 2026-10-11,Lima,Huarochiri,Ricardo Palma,EE.SS. SOL Y CAMPO,Diesel DB5,23.99
 2026-10-11,Lima,Huarochiri,Ricardo Palma,INVERSIONES E INDUSTRIAS MIRFER S.A.C.,Diesel DB5,23.69
-2026-10-11,Lima,Huarochiri,Ricardo Palma,SAN PEDRO COMBUSTIBLES S.R.L.,Diesel DB5,23.69
+2026-10-11,Lima,Huarochiri,Ricardo Palma,SAN PEDRO COMBUSTIBLES S.R.L.,Diesel DB5,23.49
 2026-10-11,Lima,Huarochiri,Ricardo Palma,EE.SS. SOL Y CAMPO,Gasolina Premium,21.49
 2026-10-11,Lima,Huarochiri,Ricardo Palma,INVERSIONES E INDUSTRIAS MIRFER S.A.C.,Gasolina Premium,21.49
 2026-10-11,Lima,Huarochiri,Ricardo Palma,SAN PEDRO COMBUSTIBLES S.R.L.,Gasolina Premium,21.95
@@ -2848,7 +2869,7 @@
 2026-10-11,Lima,Lima,Ate,LUISA ANGELICA TORRES VASQUEZ,Diesel DB5,25.00
 2026-10-11,Lima,Lima,Ate,NEGOCIACION OLIMPO S.A.,Diesel DB5,25.98
 2026-10-11,Lima,Lima,Ate,PETRO EXPLORIUM,Diesel DB5,23.59
-2026-10-11,Lima,Lima,Ate,RAUL TORRES QUIQUIA,Diesel DB5,23.99
+2026-10-11,Lima,Lima,Ate,RAUL TORRES QUIQUIA,Diesel DB5,23.79
 2026-10-11,Lima,Lima,Ate,REPSOL COMERCIAL S.A.C.,Diesel DB5,26.99
 2026-10-11,Lima,Lima,Ate,REPSOL COMERCIAL S.A.C.,Diesel DB5,27.99
 2026-10-11,Lima,Lima,Ate,REPSOL COMERCIAL S.A.C.,Diesel DB5,27.99
@@ -2858,7 +2879,7 @@
 2026-10-11,Lima,Lima,Ate,REPSOL COMERCIAL S.A.C.,Diesel DB5,27.99
 2026-10-11,Lima,Lima,Ate,REPSOL COMERCIAL S.A.C.,Diesel DB5,27.99
 2026-10-11,Lima,Lima,Ate,SERVICENTRO SMILE S.A.,Diesel DB5,23.35
-2026-10-11,Lima,Lima,Ate,SERVICIOS MULTIPLES Y TRANSPORTES W.W.C. S.R.L.,Diesel DB5,23.89
+2026-10-11,Lima,Lima,Ate,SERVICIOS MULTIPLES Y TRANSPORTES W.W.C. S.R.L.,Diesel DB5,23.79
 2026-10-11,Lima,Lima,Ate,SERVOSA COMBUSTIBLES S.A.C.,Diesel DB5,24.89
 2026-10-11,Lima,Lima,Ate,VICENTE Y ROMUALDA  PRINCIPAL.,Diesel DB5,24.65
 2026-10-11,Lima,Lima,Ate,VIJOGAS S.A.C.,Diesel DB5,24.55
@@ -3044,10 +3065,10 @@
 2026-10-11,Lima,Lima,Carabayllo,GO COMBUSTIBLE 4 S.A.C.,Diesel DB5,25.29
 2026-10-11,Lima,Lima,Carabayllo,GRIFO DENNIS S.A.C.,Diesel DB5,23.98
 2026-10-11,Lima,Lima,Carabayllo,GRIFO PUNCHAUCA E.I.R.L.,Diesel DB5,24.39
-2026-10-11,Lima,Lima,Carabayllo,GRIFO SANTA ISABEL,Diesel DB5,24.39
+2026-10-11,Lima,Lima,Carabayllo,GRIFO SANTA ISABEL,Diesel DB5,23.79
 2026-10-11,Lima,Lima,Carabayllo,GRUPO E & E S.A.C.,Diesel DB5,23.98
 2026-10-11,Lima,Lima,Carabayllo,GRUPO HBL S.A.C.,Diesel DB5,24.22
-2026-10-11,Lima,Lima,Carabayllo,INVERSIONES GOLD STAR EIRL,Diesel DB5,24.59
+2026-10-11,Lima,Lima,Carabayllo,INVERSIONES GOLD STAR EIRL,Diesel DB5,24.29
 2026-10-11,Lima,Lima,Carabayllo,INVERSIONES SCOTT S.A.C.,Diesel DB5,25.49
 2026-10-11,Lima,Lima,Carabayllo,INVERSIONES VALUEMI S.A.C.,Diesel DB5,24.25
 2026-10-11,Lima,Lima,Carabayllo,KALLPA ENERGY CORP S.A.C.,Diesel DB5,20.99
@@ -3090,7 +3111,7 @@
 2026-10-11,Lima,Lima,Carabayllo,GRIFO SANTA ISABEL,Gasolina Premium,22.59
 2026-10-11,Lima,Lima,Carabayllo,GRUPO E & E S.A.C.,Gasolina Premium,23.68
 2026-10-11,Lima,Lima,Carabayllo,GRUPO HBL S.A.C.,Gasolina Premium,22.99
-2026-10-11,Lima,Lima,Carabayllo,INVERSIONES GOLD STAR EIRL,Gasolina Premium,23.19
+2026-10-11,Lima,Lima,Carabayllo,INVERSIONES GOLD STAR EIRL,Gasolina Premium,22.79
 2026-10-11,Lima,Lima,Carabayllo,INVERSIONES SCOTT S.A.C.,Gasolina Premium,22.60
 2026-10-11,Lima,Lima,Carabayllo,INVERSIONES VALUEMI S.A.C.,Gasolina Premium,22.50
 2026-10-11,Lima,Lima,Carabayllo,KALLPA ENERGY CORP S.A.C.,Gasolina Premium,19.99
@@ -3134,7 +3155,7 @@
 2026-10-11,Lima,Lima,Carabayllo,GRIFO SANTA ISABEL,Gasolina Regular,21.59
 2026-10-11,Lima,Lima,Carabayllo,GRUPO E & E S.A.C.,Gasolina Regular,22.34
 2026-10-11,Lima,Lima,Carabayllo,GRUPO HBL S.A.C.,Gasolina Regular,21.79
-2026-10-11,Lima,Lima,Carabayllo,INVERSIONES GOLD STAR EIRL,Gasolina Regular,21.89
+2026-10-11,Lima,Lima,Carabayllo,INVERSIONES GOLD STAR EIRL,Gasolina Regular,21.59
 2026-10-11,Lima,Lima,Carabayllo,INVERSIONES SCOTT S.A.C.,Gasolina Regular,21.60
 2026-10-11,Lima,Lima,Carabayllo,INVERSIONES VALUEMI S.A.C.,Gasolina Regular,21.50
 2026-10-11,Lima,Lima,Carabayllo,KALLPA ENERGY CORP S.A.C.,Gasolina Regular,18.99
@@ -3156,7 +3177,7 @@
 2026-10-11,Lima,Lima,Chaclacayo,ESTACION DE SERVICIOS CHACLACAYO SAC,Diesel DB5,23.83
 2026-10-11,Lima,Lima,Chaclacayo,GRIFO SAN IGNACIO SAC,Diesel DB5,23.89
 2026-10-11,Lima,Lima,Chaclacayo,GRUPO ARIAS S.A.C.,Diesel DB5,23.79
-2026-10-11,Lima,Lima,Chaclacayo,INVERSIONES Y SERVICIOS MULTIPLES W.R S.A.C,Diesel DB5,23.79
+2026-10-11,Lima,Lima,Chaclacayo,INVERSIONES Y SERVICIOS MULTIPLES W.R S.A.C,Diesel DB5,23.69
 2026-10-11,Lima,Lima,Chaclacayo,OLGA SALAZAR  SANTIVA SAC,Diesel DB5,24.97
 2026-10-11,Lima,Lima,Chaclacayo,REPSOL COMERCIAL S.A.C.,Diesel DB5,27.99
 2026-10-11,Lima,Lima,Chaclacayo,COESTI S.A.,Gasolina Premium,23.49
@@ -3254,7 +3275,7 @@
 2026-10-11,Lima,Lima,Comas,CORPORACION MEGUSAC,Diesel DB5,24.39
 2026-10-11,Lima,Lima,Comas,CORPORACION MEGUSAC,Diesel DB5,24.49
 2026-10-11,Lima,Lima,Comas,DISTRIBUIDORA E IMPORTADORA  M & G SOCIEDAD ANONIMA CERRADA DISTRIBUIDORA E IMPORTADORA M & G S.A.C.,Diesel DB5,23.69
-2026-10-11,Lima,Lima,Comas,DISTRIBUIDORA E IMPORTADORA M & G S.A.C.,Diesel DB5,24.39
+2026-10-11,Lima,Lima,Comas,DISTRIBUIDORA E IMPORTADORA M & G S.A.C.,Diesel DB5,23.79
 2026-10-11,Lima,Lima,Comas,ESCOH SAC,Diesel DB5,25.58
 2026-10-11,Lima,Lima,Comas,ESTACION DE SERVICIOS ESTEL S.A.C.,Diesel DB5,24.19
 2026-10-11,Lima,Lima,Comas,ESTACION INCAS PECSA,Diesel DB5,24.99
@@ -3273,7 +3294,7 @@
 2026-10-11,Lima,Lima,Comas,ROAN INVERSIONES  SOCIEDAD ANONIMA CERRADA,Diesel DB5,24.49
 2026-10-11,Lima,Lima,Comas,VILMA ROSA MELENDEZ PELAEZ,Diesel DB5,26.09
 2026-10-11,Lima,Lima,Comas,AERO GAS DEL NORTE SAC,Gasolina Premium,22.75
-2026-10-11,Lima,Lima,Comas,ALVAUNSI S.A.C.,Gasolina Premium,22.60
+2026-10-11,Lima,Lima,Comas,ALVAUNSI S.A.C.,Gasolina Premium,22.10
 2026-10-11,Lima,Lima,Comas,BERLINA CIERTO ROJAS,Gasolina Premium,21.50
 2026-10-11,Lima,Lima,Comas,COESTI S.A,Gasolina Premium,23.69
 2026-10-11,Lima,Lima,Comas,COESTI S.A.,Gasolina Premium,22.69
@@ -3300,7 +3321,7 @@
 2026-10-11,Lima,Lima,Comas,ROAN INVERSIONES  SOCIEDAD ANONIMA CERRADA,Gasolina Premium,22.99
 2026-10-11,Lima,Lima,Comas,VILMA ROSA MELENDEZ PELAEZ,Gasolina Premium,23.69
 2026-10-11,Lima,Lima,Comas,AERO GAS DEL NORTE SAC,Gasolina Regular,21.65
-2026-10-11,Lima,Lima,Comas,ALVAUNSI S.A.C.,Gasolina Regular,21.30
+2026-10-11,Lima,Lima,Comas,ALVAUNSI S.A.C.,Gasolina Regular,21.00
 2026-10-11,Lima,Lima,Comas,BERLINA CIERTO ROJAS,Gasolina Regular,20.40
 2026-10-11,Lima,Lima,Comas,COESTI S.A,Gasolina Regular,21.79
 2026-10-11,Lima,Lima,Comas,COESTI S.A.,Gasolina Regular,20.99
@@ -3658,12 +3679,12 @@
 2026-10-11,Lima,Lima,Lima,FORMAS METALICAS S.A.,Gasolina Regular,21.80
 2026-10-11,Lima,Lima,Lima,GASOLINERAS  S.A.C.,Gasolina Regular,20.39
 2026-10-11,Lima,Lima,Lima,GLOBAL FUEL SA,Gasolina Regular,21.59
-2026-10-11,Lima,Lima,Lima,GRIFO EL SALVADOR S.R.L.,Gasolina Regular,21.69
 2026-10-11,Lima,Lima,Lima,GRIFO J.H.P. E.I.R.LTDA.,Gasolina Regular,20.98
 2026-10-11,Lima,Lima,Lima,GRIFO SAN IGNACIO SAC,Gasolina Regular,23.29
 2026-10-11,Lima,Lima,Lima,GRIFOS ESPINOZA S.A.,Gasolina Regular,21.29
 2026-10-11,Lima,Lima,Lima,GRIFOS ESPINOZA S.A.,Gasolina Regular,21.99
 2026-10-11,Lima,Lima,Lima,GRIFOSA SAC LIMA,Gasolina Regular,20.99
+2026-10-11,Lima,Lima,Lima,OCORIS 1 SAC,Gasolina Regular,22.59
 2026-10-11,Lima,Lima,Lima,PETRONEX PERU S.A.C.,Gasolina Regular,21.49
 2026-10-11,Lima,Lima,Lima,REPSOL COMERCIAL S.A.C.,Gasolina Regular,22.99
 2026-10-11,Lima,Lima,Lima,REPSOL COMERCIAL S.A.C.,Gasolina Regular,23.69
@@ -3784,7 +3805,7 @@
 2026-10-11,Lima,Lima,Lurigancho,NEGOCIACIONES ATENCIO S.A.C.,Diesel DB5,23.90
 2026-10-11,Lima,Lima,Lurigancho,REPRESENTACIONES E IMPORTACIONES MIJ S.R.L.,Diesel DB5,24.59
 2026-10-11,Lima,Lima,Lurigancho,S Y M COMERCIAL DEL PERU S.A.C.,Diesel DB5,25.49
-2026-10-11,Lima,Lima,Lurigancho,SAN PEDRO COMBUSTIBLES S.R.L.,Diesel DB5,23.68
+2026-10-11,Lima,Lima,Lurigancho,SAN PEDRO COMBUSTIBLES S.R.L.,Diesel DB5,23.49
 2026-10-11,Lima,Lima,Lurigancho,SERVICENTRO BERNY S.R.L.,Diesel DB5,24.59
 2026-10-11,Lima,Lima,Lurigancho,SERVICENTRO EL PIONERO E.I.R.L.,Diesel DB5,24.59
 2026-10-11,Lima,Lima,Lurigancho,SERVICIOS MULTIPLES SANTA CECILIA S.A.C.,Diesel DB5,23.99
@@ -3813,7 +3834,7 @@
 2026-10-11,Lima,Lima,Lurigancho,NEGOCIACIONES ATENCIO S.A.C.,Gasolina Premium,23.00
 2026-10-11,Lima,Lima,Lurigancho,REPRESENTACIONES E IMPORTACIONES MIJ S.R.L.,Gasolina Premium,22.99
 2026-10-11,Lima,Lima,Lurigancho,S Y M COMERCIAL DEL PERU S.A.C.,Gasolina Premium,22.89
-2026-10-11,Lima,Lima,Lurigancho,SAN PEDRO COMBUSTIBLES S.R.L.,Gasolina Premium,21.95
+2026-10-11,Lima,Lima,Lurigancho,SAN PEDRO COMBUSTIBLES S.R.L.,Gasolina Premium,21.88
 2026-10-11,Lima,Lima,Lurigancho,SERVICENTRO BERNY S.R.L.,Gasolina Premium,21.99
 2026-10-11,Lima,Lima,Lurigancho,SERVICENTRO EL PIONERO E.I.R.L.,Gasolina Premium,22.59
 2026-10-11,Lima,Lima,Lurigancho,SERVICIOS MULTIPLES SANTA CECILIA S.A.C.,Gasolina Premium,22.55
@@ -3843,7 +3864,7 @@
 2026-10-11,Lima,Lima,Lurigancho,NEGOCIACIONES ATENCIO S.A.C.,Gasolina Regular,21.00
 2026-10-11,Lima,Lima,Lurigancho,REPRESENTACIONES E IMPORTACIONES MIJ S.R.L.,Gasolina Regular,21.49
 2026-10-11,Lima,Lima,Lurigancho,S Y M COMERCIAL DEL PERU S.A.C.,Gasolina Regular,21.89
-2026-10-11,Lima,Lima,Lurigancho,SAN PEDRO COMBUSTIBLES S.R.L.,Gasolina Regular,20.88
+2026-10-11,Lima,Lima,Lurigancho,SAN PEDRO COMBUSTIBLES S.R.L.,Gasolina Regular,20.77
 2026-10-11,Lima,Lima,Lurigancho,SERVICENTRO BERNY S.R.L.,Gasolina Regular,20.59
 2026-10-11,Lima,Lima,Lurigancho,SERVICENTRO EL PIONERO E.I.R.L.,Gasolina Regular,21.59
 2026-10-11,Lima,Lima,Lurigancho,SERVICIOS MULTIPLES SANTA CECILIA S.A.C.,Gasolina Regular,21.39
@@ -5045,7 +5066,6 @@
 2026-10-11,Lambayeque,Chiclayo,Chiclayo,GRIFOS GRAN PRIX S.A.C,Diesel DB5,24.45
 2026-10-11,Lambayeque,Chiclayo,Chiclayo,GRIFOS SANTA YSABEL,Diesel DB5,24.85
 2026-10-11,Lambayeque,Chiclayo,Chiclayo,GRIFOS SANTA YSABEL,Diesel DB5,24.85
-2026-10-11,Lambayeque,Chiclayo,Chiclayo,GRUPO PETROCAÑA S.A.C.,Diesel DB5,24.00
 2026-10-11,Lambayeque,Chiclayo,Chiclayo,INVERSIONES JEM  S.A.C,Diesel DB5,24.00
 2026-10-11,Lambayeque,Chiclayo,Chiclayo,INVERSIONES MIGUEL ANGELO E.I.R.L.,Diesel DB5,24.99
 2026-10-11,Lambayeque,Chiclayo,Chiclayo,LIMABANDA S.A.C.,Diesel DB5,23.99
@@ -5175,7 +5195,7 @@
 2026-10-11,Lambayeque,Chiclayo,Jose Leonardo Ortiz,COMBUSTIBLES FERNANDEZ S.A.C.,Diesel DB5,24.39
 2026-10-11,Lambayeque,Chiclayo,Jose Leonardo Ortiz,COMERCIAL MEXICO E IMPORTACIONES EIRL,Diesel DB5,24.79
 2026-10-11,Lambayeque,Chiclayo,Jose Leonardo Ortiz,COMFERNORT E.I.R.L,Diesel DB5,24.59
-2026-10-11,Lambayeque,Chiclayo,Jose Leonardo Ortiz,ESTACION DE SERVICIO SALAMANCA II S.A.C.,Diesel DB5,24.59
+2026-10-11,Lambayeque,Chiclayo,Jose Leonardo Ortiz,ESTACION DE SERVICIO SALAMANCA II S.A.C.,Diesel DB5,24.19
 2026-10-11,Lambayeque,Chiclayo,Jose Leonardo Ortiz,ESTACION DE SERVICIO SAN FRANCISCO S.R.L.,Diesel DB5,25.59
 2026-10-11,Lambayeque,Chiclayo,Jose Leonardo Ortiz,ESTACION DE SERVICIOS GAMEZ E.I.R.L,Diesel DB5,24.49
 2026-10-11,Lambayeque,Chiclayo,Jose Leonardo Ortiz,ESTACION DE SERVICIOS LIDER SRL,Diesel DB5,24.47
